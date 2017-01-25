@@ -1,0 +1,29 @@
+//index.php - Connor Gillmor - 01-25-2017
+//dispalys "Hello, World!" on a webpage.
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="HWCSS.css"> 
+        <title>Hello World Demo</title>
+    </head>
+    <body>
+        <?php
+       print "Hello, World!";
+        ?>
+    </body>
+</html>
+
+//HWCSS.css - Connor Gillmor - 01-25-2017
+//All of the changes in a CSS file that will be accessed from the link in the PHP file.
+body
+{
+        font-family: "Times New Roman", Times, Serif;
+        font-size: 50px;
+        width: 175px;
+        border-style: double;
+        border-width: 7px;
+        font-variant:small-caps;
+        text-shadow: 3px 2px red;
+        background-color: lightslategray;
+        font-weight: normal;
+}
