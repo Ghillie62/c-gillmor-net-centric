@@ -1,0 +1,64 @@
+<!-- index.php - Connor Gillmor - 01-27-2017
+This is the php program used for the fancy hello world project
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="20170127_Fancy_Hello_World_css.css" >
+        <title>Fancy Hello World</title>
+    </head>
+    <body>
+       
+        <p id = "header"> Hello World Demo <span id="v2"> V2 </span> </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <p id ="b1"> Hello, World! </p>
+        <img src="http://adtdesigns.co.uk/wp-content/uploads/2015/06/hello-world-banner.jpg" alt="hello world" style="width:800px;height:150px;">
+    </body>
+</html>
+
+/*20170127_Fancy_Hello_World_css.css - Connor Gillmor - 01-27-2017
+this is the css file that is linked to the php program used for the
+fancy hello world demo*/
+#header
+{
+    font-size: 45px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: underline;
+    color: floralwhite;
+    text-shadow: 4px 3px black;
+    font-variant: small-caps;
+}
+#v2
+{
+    color: red;
+}
+#b1
+{
+   text-align: center;
+   color: red;
+   font-family: "Courier New", Courier, monospace;
+   font-size: 30px;
+   font-weight: bold;
+   text-shadow: 4px 3px black;
+}
+img
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+    border: solid;
+}
+body
+{
+    background-color: darkslategray
+}
