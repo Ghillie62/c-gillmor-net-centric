@@ -1,0 +1,84 @@
+//20170201_Playing_With_CSS.php - Connor Gillmor - 02-01-2017
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <title>Play with CSS</title>
+    </head>
+    <body>
+        <p id = "header"> CSS Page </p>
+        <p id = "para1"> I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        I'm playing with CSS stuff. I'm playing with CSS stuff. I'm playing with CSS stuff. 
+        </p>
+        <table id = "table">
+            <tr>
+                <th> What I'm doing</th>
+                <th> Is it fun? </th>
+            </tr>
+            <tr>
+                <td> All the day's homework </td>
+                <td> Nope, not really </td>
+            </tr>
+            <tr>
+                <td> CSS stuff </td>
+                <td> It's pretty enjoyable </td>
+            </tr>
+            <tr>
+                <td> Xbox </td>
+                <td> Also pretty enjoyable </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>
+
+//main.css - Connor Gillmor - 02-01-2017
+
+body
+{
+    background-color: whitesmoke;
+    background-image: url("http://www.clipartlord.com/wp-content/uploads/2015/11/banana20.png");
+}
+#header
+{
+    text-decoration: underline;
+    font-variant: small-caps;
+    font-size: 75px;
+    font-family: "Times New Roman";
+    text-shadow: 2px 3px orange;
+    text-align: center;
+    
+}
+#para1
+{
+    text-align: left;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 2px 2px white;
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+    border-color: red;
+}
+table, th, td
+{
+    border-collapse: collapse;
+    border: 2px double black;
+    font-size: 40px;
+    color: blue;
+    text-shadow: 2px 2px white;
+}
