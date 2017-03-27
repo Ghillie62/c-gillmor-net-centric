@@ -1,0 +1,35 @@
+index.php
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="WebsiterCSS.css" />
+        <title>My Projects</title>
+    </head>
+    <body>
+        <h1 id="header">
+            Isn't this fun?
+        </h1>
+        <div id="links">
+        <p id="HW"> <a href="/HW2">Hello World Demo</a> </p>
+        <p id="FancyHW"> <a href="/20170127_Fancy_Hello_World_Gillmor">Fancy Hello World</a> </p>
+        <p id="PlayCSS"> <a href="/20170201_Play_With_CSS_Gillmor">Play with CSS</a> </p>
+        <p id="PrintAd"> <a href="/20170209_Print_Ad_Mimic_Gillmor">Mimic Ad</a> </p>
+        <p id="MyCalendar"> <a href="/MyCalendar">Calendar</a> </p>
+        </div>
+    </body>
+</html>
+
+
+css file
+
+#header
+{
+    text-align: center;
+    font-size: 200px;
+    text-decoration: underline;
+}
+#links
+{
+    
+}
