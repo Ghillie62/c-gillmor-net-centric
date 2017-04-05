@@ -1,0 +1,75 @@
+PHP file
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calendar Example</title>
+        <link rel="stylesheet" type="text/css" href="CalendarDesign.css">
+    </head>
+    <body>
+        <?php
+        echo "<p id= 'header'> Example Calendars </p>";
+        echo "<p id= 'birthday'> June, 1996";
+        calendarCustomMonthYear(6, 1996);
+        echo "</p>";
+        
+        echo "<p id= 'thisMonth'> March, 2017";
+        calendarCustomMonthYear(3, 2017);
+        echo "</p>";
+        
+        function calendarCustomMonthYear ($month, $year)
+        {
+            $dateOfCalendar = gregoriantojd($month, $year, 1);
+            $startOfMonth = jddayofweek($dateOfCalendar);
+            $numDaysMonth = cal_days_in_month(CAL_GREGORIAN, $month, $year);
+            echo "<p>" . jdmonthname($dateOfCalendar, 1) . " " . "</p>";
+            calendarWithCorrectInfo($numDaysMonth, $startOfMonth);
+        }
+        
+        function calendarWithCorrectInfo($numDaysMonth, $startOfMonth)
+        {
+            echo"<table id='table'>";
+            echo "<tr>";
+            for ($i = 0; $i < $startOfMonth; $i++)
+            {
+                echo "<td id= 'data'>" . $i . "</td>";
+            }
+            
+            $currentDay = $startOfMonth;
+            
+            for ($i = 0; $i < $numDaysMonth; $i++)
+            {
+                echo "<td id= 'data'>" . $i . "</td>";
+                $currentDay++;
+                if($currentDay % 7 == 0)
+                {
+                    echo "</tr>";
+                    echo "<tr>";
+                }
+            }
+            echo "</tr";
+            echo "</table>";
+        }
+        ?>
+    </body>
+</html>
+
+CSS File
+
+#header
+{
+    text-align: center;
+    font-size: 60px;
+}
+#birthday
+{
+    text-align: center;
+}
+#table
+{
+    text-align: center;
+}
+#data
+{
+    
+}
