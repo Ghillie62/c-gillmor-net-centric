@@ -1,0 +1,332 @@
+HTML File
+<html>
+    <head>
+        <title>What To Do</title>
+        <meta charset="UTF-8">
+        <link href="WhatToDoCSS.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="body">
+        <div id="headerFull">
+            <p class="header" id="what">
+            WHAT
+            </p>
+            <p class="header" id="to">
+            TO
+            </p>
+            <p class="header" id="do">
+            DO
+            </p>
+        </div>
+        <div id="navBar">
+            <p class="navBarItem" id="navItem1">General</p> 
+            <p class="navBarItem" id="navItem2">Subtle Animations</p>
+            <p class="navBarItem" id="navItem3">How to Supplement Design</p>
+            <p class="navBarItem" id="navItem4">Etc.</p>
+        </div>
+        <div id="navBarInfo">
+            <table id="item1Table">
+                <tr>
+                    <td>link 1</td>
+                    <td>link 2</td>
+                    <td>link 3</td>
+                </tr>
+                <tr>
+                    <td>link 4</td>
+                    <td>link 5</td>
+                    <td>link 6</td>
+                </tr>
+                 <tr>
+                    <td>link 7</td>
+                    <td>link 8</td>
+                    <td>link 9</td>
+                </tr>
+            </table>
+            <table id="item2Table">
+                <tr>
+                    <td>link 1</td>
+                    <td>link 2</td>
+                    <td>link 3</td>
+                </tr>
+                <tr>
+                    <td>link 4</td>
+                    <td>link 5</td>
+                    <td>link 6</td>
+                </tr>
+                 <tr>
+                    <td>link 7</td>
+                    <td>link 8</td>
+                    <td>link 9</td>
+                </tr>
+            </table>
+            <table id="item3Table">
+                <tr>
+                    <td>link 1</td>
+                    <td>link 2</td>
+                    <td>link 3</td>
+                </tr>
+                <tr>
+                    <td>link 4</td>
+                    <td>link 5</td>
+                    <td>link 6</td>
+                </tr>
+                 <tr>
+                    <td>link 7</td>
+                    <td>link 8</td>
+                    <td>link 9</td>
+                </tr>
+            </table>
+            <table id="item4Table">
+                <tr>
+                    <td>link 1</td>
+                    <td>link 2</td>
+                    <td>link 3</td>
+                </tr>
+                <tr>
+                    <td>link 4</td>
+                    <td>link 5</td>
+                    <td>link 6</td>
+                </tr>
+                 <tr>
+                    <td>link 7</td>
+                    <td>link 8</td>
+                    <td>link 9</td>
+                </tr>
+            </table>
+        </div>
+        <div id="textContent">
+            <span class="tab">This</span> web page is part of the net-centric computing project of making an interesting
+            web page using <a id ="link1" href='https://www.w3schools.com/jquery/default.asp'>jQuery</a>. This paragraph exists 
+            to tell you about the design and code behind the web page. The design uses blue and purple for headers and 
+            titles, because they work well together and they are fairly easy colors to design around. The same
+            goes with the neutral background color. At the moment the nav bar is not working, and the problem is being 
+            worked on. Also, it seems like the jQuery isn't reacting to user input and I cannot tell why.
+        </div>
+        <p class="links" id="home">
+            <a href='ncgillmor.onucs.org'>Home</a>
+        </p>
+        <p class="links" id ="PDF">
+            <a href="/htdocs/20170421_What_To_Do_Gillmor_Extine/Images/20170421_Group_Project_Net_Centric_Extine_Gillmor">PDF</a>
+        </p>
+        <div id="images">
+        <p id="image1"> <a  id="code3" href="http://imgur.com/xYUxxOd"><img src="http://i.imgur.com/xYUxxOd.png" title="source: imgur.com" /></a></p>
+        <p id="image2"> <a  id="code2" href="http://imgur.com/q59Vpx8"><img src="http://i.imgur.com/q59Vpx8.png" title="source: imgur.com" /></a></p>
+        <p id="image3"> <a  id="code1" href="http://imgur.com/4h4ValM"><img src="http://i.imgur.com/4h4ValM.png" title="source: imgur.com" /></a></p>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#navItem1").mouseenter(function(){
+                   $("#item1Table").css("display", "visible");
+                   $("#navBarInfo").css("display", "visible");
+                   $("#navItem1").mouseleave(function(){
+                       $("#item1Table").css("display", "hidden");
+                   });
+                }); 
+                $("#navItem2").mouseenter(function(){
+                   $("#item2Table").css("display", "visible");
+                   $("#navBarInfo").css("display", "visible");
+                   $("#navItem2").mouseleave(function(){
+                       $("#item2Table").css("display", "hidden");
+                   });
+                });
+                $("#navItem3").mouseenter(function(){
+                   $("#item3Table").css("display", "visible");
+                   $("#navBarInfo").css("display", "visible");
+                   $("#navItem3").mouseleave(function(){
+                       $("#item3Table").css("display", "hidden");
+                   });
+                });
+                $("#navItem4").mouseenter(function(){
+                   $("#item4Table").css("display", "visible");
+                   $("#navBarInfo").css("display", "visible");
+                   $("#navItem4").mouseleave(function(){
+                       $("#item4Table").css("display", "hidden");
+                   });
+                });
+                $("#link1").mouseover(function(){
+                    ("#link1").css("background-color", "yellow");
+                });
+            });
+        </script>
+    </body>
+</html>
+
+CSS File
+#body
+{
+    background-color: beige;
+}
+.header
+{
+   font-size: 60px;
+   margin: 0px;
+   text-align: center;
+   text-shadow: 2px 2px #ffffff;
+   font-weight: bold;
+}
+#headerFull
+{
+    margin: auto;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#what
+{
+    background-color: deepskyblue;
+    width: 75%;
+    text-align: center;
+    margin: auto;
+    border-left: solid;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    z-index: -2;
+}
+#to
+{
+    background-color: deepskyblue;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    z-index: 0;
+    position: relative;
+    bottom: 3px;
+}
+#do
+{
+    background-color: deepskyblue;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    z-index: 1;
+    position: relative;
+    bottom: 6px;
+}
+.navBarItem
+{
+    text-align: center;
+    font-size: 25px;
+    border-left: solid;
+    border-left-width: 5px;
+    background-color: blueviolet;
+    font-weight: bold;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+}
+#navBar
+{
+    width: 260px;
+    height: 20px;
+}
+#navBarInfo
+{
+    visibility: hidden;
+    position: relative;
+    left: 300px;
+    bottom: 10px;
+    margin: 0px;
+    font-size: 30px;
+    background-color: blueviolet;
+    height: 175px;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    width: 30%;
+    
+}
+#item1Table
+{
+    text-align: left;
+    visibility: hidden;
+}
+#item2Table
+{
+    text-align: left;
+    visibility: hidden;
+}
+#item3Table
+{
+    text-align: left;
+    visibility: hidden;
+}
+#item4Table
+{
+    text-align: left;
+    visibility: hidden;
+}
+#textContent
+{
+    font-size: 30px;
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    background-color: cornflowerblue;
+    border: solid;
+    border-width: 3px;
+    padding: 4px;
+    border-radius: 10px;
+    position: relative;
+    top: 45px;
+}
+.tab
+{
+    margin-left: 40px;
+}
+#image1
+{
+    border:solid;
+    border-width: 2px;
+    width: 502px;
+    position: relative;
+    left: 500px;
+    top: 23px;
+}
+#image2
+{
+    border:solid;
+    border-width: 2px;
+    width: 258px;
+    float: right;
+    position: relative;
+    bottom: 1300px;
+}
+#image3
+{
+    border:solid;
+    border-width: 2px;
+    width: 593px;
+    position: relative;
+    left: 1287px;
+    bottom: 600px;
+}
+.links
+{
+    position: relative;
+    bottom: 520px;
+    left: 600px;
+}
+#images
+{
+    
+}
+#home
+{
+    font-size: 27px;
+}
+#PDF
+{
+    font-size: 27px;
+    position: relative;
+    left: 1220px;
+    bottom: 575px;
+}
